@@ -1,4 +1,7 @@
-/* Base Styles */
+/* =========================
+   Global Variables (Theme)
+============================ */
+/* Defines the primary color scheme, gradients, shadows, and reusable design tokens */
  :root {
     --primary-color: #3B82F6;
     --accent-color: #00FFB2;
@@ -20,7 +23,7 @@
     --transition: all 0.3s ease;
   } 
   
-  
+  /* Reset and Defaults*/
   * {
     margin: 0;
     padding: 0;
@@ -38,7 +41,7 @@
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-  
+  /*layout container*/
   .container {
     width: 100%;
     max-width: 1200px;
@@ -50,7 +53,7 @@
   section {
     padding: 5rem 0;
   }
-  
+  /* Typography Elements */
   h1, h2, h3 {
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -61,7 +64,7 @@
     margin-bottom: 1rem;
     text-align: justify;
   }
-
+  /* Nviagation Bar */
   nav {
     display: flex;
     justify-content: space-between;
@@ -82,7 +85,7 @@
     color: black;
     cursor: pointer;
 }
-
+/* Link styles inside nav */
   .nav-links a {
     color: var(--text-color);
     text-decoration: none;
@@ -92,6 +95,7 @@
     font-size: 1.1rem;
     padding: 0.5rem 0;
 }
+/* Animated underline on hover */
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -107,7 +111,7 @@
 .nav-links a:hover::after {
   width: 100%;
 }
-  
+  /* General link styles */
   a {
     text-decoration: none;
     color: var(--primary-color);
@@ -116,19 +120,17 @@
   
   a:hover {
     color: var(--primary-dark);
-    /* background-color: #0ef; */
     padding: 0.25rem;
-    /* border-radius: var(--radius); */
   }
 
-  
+  /* Section Titles and Buttons */
   .section-title {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
     position: relative;
   }
-  
+  /* Decorative underline for section title */
   .section-title::after {
     content: '';
     position: absolute;
@@ -140,7 +142,7 @@
     background-color: var(--primary-color);
     border-radius: 2px;
   }
-  
+  /* General button styles */
   .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -177,7 +179,7 @@
     font-size: 0.875rem;
   }
   
-  /* Header */
+  /* Header Styles*/
   header {
     position: fixed;
     width: 100%;
@@ -258,7 +260,7 @@
     height: 150px;
     margin: 0 auto 2rem;
   }
-  
+  /* Avatar styling */
   .avatar img{
     width: 100%;
     height: 100%;
@@ -273,12 +275,12 @@
     border: 5px solid #0ef;
     box-shadow: 0px 0px 50px #0ef;
   }
-  
+  /* Hero text */
   .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
-  
+  /* Highlighted text with gradient effect */
   .highlight {
     color: var(--primary-color);
     background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
@@ -298,7 +300,7 @@
     margin: 0 auto 2rem;
     font-size: 1.1rem;
   }
-  
+  /* Call-to-action buttons */
   .cta-buttons {
     display: flex;
     justify-content: center;
@@ -307,6 +309,7 @@
     
     
   }
+  /* Hero button customization */
   .btn.primary-btn{
     background: linear-gradient(260deg, #DF8908 -5.09%, #B415FF 106.28%);
     color: white;
@@ -319,6 +322,7 @@
 
   }
   
+/* Scroll-down animation */
   .scroll-down {
     display: block;
     margin: 2rem auto 0;
@@ -361,7 +365,7 @@
     flex-direction: column;
     gap: 1rem;
   }
-  
+  /* About cards styling */
   .card {
     background-color: var(--card-bg);
     padding: 1.5rem;
@@ -397,7 +401,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
-
+/* Education cards */
 .education-card {
   background-color: white;
   padding: 1.5rem;
@@ -416,7 +420,7 @@
   color: #666;
   margin-bottom: 0.5rem;
 }
-
+/* Courses list in education section */
 .education-degree {
   color: #4f46e5;
   font-weight: 500;
@@ -514,11 +518,6 @@
   }
   
   .skill-percentage {
-    /* width: 50px;
-    text-align: right;
-    margin-left: 0.5rem;
-    font-size: 0.875rem;
-    color: var(--text-light); */
     font-size: 30px;
     font-weight:10 ;
     background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
